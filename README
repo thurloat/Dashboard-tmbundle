@@ -1,0 +1,22 @@
+Dashboard Framework's very own TextMate Bundle.
+
+Templates:
+    -- Dashboard Module
+        creates your initial module php class, fills it with date, GPL header and an empty class to d_build (see below)
+Snippets:
+    -- d_build
+        builds a skeleton module which includes Page class, Router and other basic things
+    -- page_with
+        creates a new page class "with" structure. with option to make it a child page class
+    -- d_dbrow
+        builds a skeleton DBRow class
+    -- DBC
+        DBColumn::make snippet
+    -- add_facebox
+        Adds required CSS and JS lines to implement a facebox on the front end
+    -- chunk_set
+        simple shortcut for smarty function {chunk_set} with nice tab stops in the right places. chunk snippets are going to be
+        converted to smarter commands later.
+Commands:
+    -- d_route 
+        scans document for previously defined parent router object, and base url to generate initial snippet
