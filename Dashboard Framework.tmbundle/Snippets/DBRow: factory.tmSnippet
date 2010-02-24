@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/**
+* 	DBRow Class Documentation
+*/
+class ${1:ClassName} extends DBRow
+{
+	function createTable()
+	{
+		\$cols = array(
+			'id?',
+			DBColumn::make('type','name','title'),	
+			);
+		return parent::createTable('${2:tablename}',__CLASS__,\$cols);
+	}
+	static function make(\$id = null) {return DBRow::make(\$id, __CLASS__);}
+	static function getAll() {
+		\$args = func_get_args();
+		array_unshift(\$args, __CLASS__);
+		return call_user_func_array(array('DBRow', 'getAllRows'), \$args);
+	}
+	static function countAll() {
+		\$args = func_get_args();
+		array_unshift(\$args, __CLASS__);
+		return call_user_func_array(array('DBRow', 'getCountRows'), \$args);
+	}
+	function quickformPrefix()
+	{
+		return '$2_';
+	}
+}</string>
+	<key>name</key>
+	<string>DBRow: factory</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>d_dbrow</string>
+	<key>uuid</key>
+	<string>215F6063-03BD-4D41-9535-862F676B9F15</string>
+</dict>
+</plist>

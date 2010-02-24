@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>DBColumn::make('${1:type}','${2:colname}','${3:Display Name}'),
+</string>
+	<key>name</key>
+	<string>DBColumn: make</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>DBC</string>
+	<key>uuid</key>
+	<string>DBE130A7-4F49-4ABC-B1DD-371ED58C99F5</string>
+</dict>
+</plist>
