@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\$this-&gt;addJS('/js/facebox.js');
+\$this-&gt;addCSS('/css/facebox.css');</string>
+	<key>name</key>
+	<string>Add Facebox</string>
+	<key>tabTrigger</key>
+	<string>add_facebox</string>
+	<key>uuid</key>
+	<string>64556560-E96E-4C3D-8949-47953D0432DB</string>
+</dict>
+</plist>

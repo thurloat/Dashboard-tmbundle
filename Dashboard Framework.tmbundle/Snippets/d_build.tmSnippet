@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>public function userDisplayName() {return '${TM_FILENAME/\.([a-z,A-Z]+)///} Management';}
+public \$icon = '/modules/${TM_FILENAME/\.([a-z,A-Z]+)///}/images/icon.png';
+
+public function __construct() {	
+	\$this-&gt;page = new Page();
+	\$this-&gt;page-&gt;with('${1:DBRowObject}')
+		-&gt;show(array('Display' =&gt; 'id'))
+		${2:-&gt;filter('order by ORDER')}
+		${3:-&gt;on('addedit')-&gt;noAJAX()}
+		${4:-&gt;name('$1')};
+
+	\$r = new Router();
+	Router::instance()-&gt;connect('^\/${1/(.*)/\L$0/}\/', \$r);
+	\$r-&gt;connect('^\/${1/(.*)/\L$0/}\/', array(\$this, 'showView'));
+}
+
+function getAdminInterface() {
+	return \$this-&gt;page-&gt;render();
+}
+
+function showView(\$params){
+	// custom view code	
+}
+
+function getUserInterface(\$params) {
+	// sample interface using dashboard
+	\$results = $1::make(\$params['id']);
+	\$this-&gt;smarty-&gt;assign('results',\$results);
+	\$this-&gt;smarty-&gt;fetch('sample.tpl');
+}</string>
+	<key>name</key>
+	<string>d_build</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>d_build</string>
+	<key>uuid</key>
+	<string>C4A5504A-4E97-475F-AE5F-EED85C01C1DC</string>
+</dict>
+</plist>

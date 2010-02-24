@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{chunk_set class="${1:DBRowObject}" label="${2:Accessor Name}" type="${3:DBColumn Type}" ${4:versions="${5:english,french}"}}
+</string>
+	<key>name</key>
+	<string>chunk_set</string>
+	<key>tabTrigger</key>
+	<string>chunk_set</string>
+	<key>uuid</key>
+	<string>0E0A9FE8-97D9-499B-91AA-759F67D5B0E5</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Dashboard Framework</string>
+	<key>ordering</key>
+	<array>
+		<string>215F6063-03BD-4D41-9535-862F676B9F15</string>
+		<string>DBE130A7-4F49-4ABC-B1DD-371ED58C99F5</string>
+		<string>C4A5504A-4E97-475F-AE5F-EED85C01C1DC</string>
+		<string>B4C8E0FD-7A82-4BD8-90D3-2524BF92C610</string>
+		<string>FDF46857-0969-4344-B363-4907443B03C9</string>
+		<string>1D7E067D-5A81-4DB9-8C0F-DB327E189F20</string>
+		<string>86DAFB22-251F-4E9B-B597-585F033D0C2D</string>
+		<string>0E0A9FE8-97D9-499B-91AA-759F67D5B0E5</string>
+		<string>64556560-E96E-4C3D-8949-47953D0432DB</string>
+		<string>BA52E227-796A-4FE5-968C-51F201EB9597</string>
+		<string>22A3CBA1-2D2E-4C19-884D-5208810FDDDC</string>
+	</array>
+	<key>uuid</key>
+	<string>E6F4B1D1-927B-4F49-8B30-2FF2FEB1D5AC</string>
+</dict>
+</plist>
